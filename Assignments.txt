@@ -1,0 +1,76 @@
+Assignment1
+===========
+1.What is Emmet?
+Emmet is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow:
+
+Basically, most text editors out there allow you to store and re-use commonly used code chunks, called “snippets”. While snippets are a good way to boost your productivity, all implementations have common pitfalls: you have to define the snippet first and you can’t extend them in runtime.
+
+Emmet takes the snippets idea to a whole new level: you can type CSS-like expressions that can be dynamically parsed, and produce output depending on what you type in the abbreviation. Emmet is developed and optimised for web-developers whose workflow depends on HTML/XML and CSS, but can be used with programming languages too.
+
+Ref: https://docs.emmet.io/
+Ref: https://dev.to/josemukorivo/enable-emmet-support-for-react-in-vs-code-2f2c
+
+2.Difference between a Library and Framework?
+A library is a collection of functions developers can call at will and still control the flow of the software application. The operations performed to be performed by libraries are precisely and specifically defined.
+
+A framework is a structure in which the application defines the content of the operation by asking the developer to fill in the spaces. The framework defines the concept with the functionality itself is defined by the developer with the end-user in mind.
+
+Frameworks and libraries are code written by third parties to solve regular/common problems or to optimise performance. A key difference between the two is the inversion of control. When using a library, the control remains with the developer who tells the application when to call library functions. When using a framework, the control is reversed, which means that the framework tells the developer where code needs to be provided and calls it as it requires.
+Ref:https://www.geeksforgeeks.org/software-framework-vs-library/
+Ref:https://kruschecompany.com/framework-vs-library/
+Ref:https://www.interviewbit.com/blog/framework-vs-library/
+
+3.What is CDN? Why do we use it?
+
+A content delivery network (CDN) is a group of geographically distributed servers that speed up the delivery of web content by bringing it closer to where users are. Data centers across the globe use caching, a process that temporarily stores copies of files, so that you can access internet content from a web-enabled device or browser more quickly through a server near you. CDNs cache content like web pages, images, and video in proxy servers near to your physical location. This allows you to do things like watch a movie, download software, check your bank balance, post on social media, or make purchases, without having to wait for content to load.
+
+The primary purpose of a content delivery network (CDN) is to reduce latency, or reduce the delay in communication created by a network's design. Because of the global and complex nature of the internet, communication traffic between websites (servers) and their users (clients) has to move over large physical distances. The communication is also two-way, with requests going from the client to the server and responses coming back.
+
+A CDN improves efficiency by introducing intermediary servers between the client and the website server. These CDN servers manage some of the client-server communications. They decrease web traffic to the web server, reduce bandwidth consumption, and improve the user experience of your applications. 
+
+Ref:https://www.akamai.com/our-thinking/cdn/what-is-a-cdn#:~:text=CDNs%20cache%20content%20like%20web,a%20CDN%20like%20an%20ATM.
+Ref:https://imagekit.io/blog/what-is-content-delivery-network-cdn-guide/
+Ref:https://aws.amazon.com/what-is/cdn/
+
+4.Why is React known as React?
+ many systems advertise some kind of reactivity, but they usually require that you set up some kind of point-to-point listeners and won’t work on structured data. This API reacts to any state or property changes, and works with data of any form (as deeply structured as the graph itself) .
+
+Ref:https://reactjs.org/blog/2016/09/28/our-first-50000-stars.html#fbolt-is-born
+Ref:https://www.quora.com/Why-is-React-called-React
+
+5. What is crossorigin in script tag?
+If we want React to be Served as a cdn link then crossorigin is recomended to be used .
+The crossorigin attribute, valid on the <audio>, <img>, <link>, <script>, and <video> elements, provides support for CORS, defining how the element handles cross-origin requests, thereby enabling the configuration of the CORS requests for the element's fetched data. Depending on the element, the attribute can be a CORS settings attribute.
+
+Ref:https://reactjs.org/docs/cdn-links.html#why-the-crossorigin-attribute
+Ref:https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin
+Ref:https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+
+6. What is diference between React and ReactDOM
+React and ReactDOM were only recently split into two different libraries. Prior to v0.14, all ReactDOM functionality was part of React. This may be a source of confusion, since any slightly dated documentation won't mention the React / ReactDOM distinction.
+
+As the name implies, ReactDOM is the glue between React and the DOM. Often, you will only use it for one single thing: mounting with ReactDOM.render(). Another useful feature of ReactDOM is ReactDOM.findDOMNode() which you can use to gain direct access to a DOM element. (Something you should use sparingly in React apps, but it can be necessary.) If your app is "isomorphic", you would also use ReactDOM.renderToString() in your back-end code.
+
+For everything else, there's React. You use React to define and create your elements, for lifecycle hooks, etc. i.e. the guts of a React application.
+
+The reason React and ReactDOM were split into two libraries was due to the arrival of React Native. React contains functionality utilised in web and mobile apps. ReactDOM functionality is utilised only in web apps. [UPDATE: Upon further research, it's clear my ignorance of React Native is showing. Having the React package common to both web and mobile appears to be more of an aspiration than a reality right now. React Native is at present an entirely different package.]
+
+See the blog post announcing the v0.14 release: https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html
+Ref:    https://stackoverflow.com/questions/34114350/react-vs-reactdom
+
+7. What is difference between react.development.js and react.production.js files via CDN?
+Development mode includes useful warnings and gives you access to tools that make development and debugging easier
+
+The production mode minifies your code, optimises assets, and produces lighter weight source maps. Also, the warning messages and other features present in development mode for debugging will be suppressed. As a result, the bundle size is drastically reduced and improves page load time. React recommends utilising the production mode while deploying the application.
+
+The main advantages of production mode are:
+Performance boost compared to Development mode
+Represents the performance of your app on the end user’s device
+Helps to catch bugs that only show up in production
+
+Ref:https://www.copycat.dev/blog/reactjs-build-production/
+ref:https://docs.expo.dev/workflow/development-mode/
+ref:https://stackoverflow.com/questions/48151128/difference-between-production-and-development-build-in-reactjs
+
+8.  What is async and defer? - see my Youtube video ;) https://www.youtube.com/watch?v=IrHmpdORLu8
+
