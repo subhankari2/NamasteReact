@@ -169,4 +169,37 @@ The config to share target browsers and Node.js versions between different front
 Ref:https://stackoverflow.com/questions/55510405/what-is-the-significance-of-browserslist-in-package-json-created-by-create-react
 Ref:https://www.npmjs.com/package/browserslist
 
+Assignment-3
+============
+
+23. what is jsx ?
+Jsx is html like syntax , but not html inside javascript .JSX internally uses React.createElement() , which is returns an object and we get HTML (dom) as the final output). 
+24.Super power of jsx?
+Readability ,
+developer friendly ,
+does sanitization 
+
+25.Role of type attribute in script tag ?What options can i use there?
+
+Attribute is not set (default), an empty string, or a JavaScript MIME type
+Indicates that the script is a "classic script", containing JavaScript code
+module
+This value causes the code to be treated as a JavaScript module
+importmap
+This value indicates that the body of the element contains an import map
+Any other value
+The embedded content is treated as a data block, and won't be processed by the browser. Developers must use a valid MIME type that is not a JavaScript MIME type to denote data blocks. All of the other attributes will be ignored, including the src attribute.
+blocking
+This attribute explicitly indicates that certain operations should be blocked on the fetching of the script. The operations that are to be blocked must be a space-separated list of blocking attributes listed below.
+
+render: The rendering of content on the screen is blocked.
+Ref:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
+
+26. {TitleComponent} vs <TitleComponent /> vs <TitleComponent></TitleComponent> in jsx ?
+{TitleComponent} => this is the jsx expression for react element . Used to get render() inside root or inside component composition .
+<TitleComponent /> => this is the jsx expression for react component . This format is  Used to get render() inside root or inside component composition .
+<TitleComponent></TitleComponent> <=> <TitleComponent /> these both are same
+
+
+
 
