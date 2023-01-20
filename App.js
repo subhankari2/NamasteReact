@@ -45,19 +45,38 @@ const Header=() =>{
     );
 }
 
-
+const card={
+    name:"Burger King",
+    image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/pifmdkvrlddxq8bshjy6",
+    rating:"4.2",
+    cuisine:["American,Burgers"]
+}
 const RestaurantList=()=>{
     return(
         <div className="card">
-    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/pifmdkvrlddxq8bshjy6" alt="logo" />
-    <h1>Burger King</h1>
-    <h1>cuisine</h1>
-    <h1>Ratings</h1>
+    <img src={card.image} alt="logo" />
+    <h1>{card.name}</h1>
+    <h3>{card.cuisine}</h3>
+    <h3>{card.rating} stars</h3>
     </div>
     );
 }
 const Body=() =>(
+    <div className="restaurantList">
     <RestaurantList />
+    <RestaurantList />
+    <RestaurantList />
+    <RestaurantList />
+    <RestaurantList />
+    <RestaurantList />
+    <RestaurantList />
+    <RestaurantList />   
+    <RestaurantList />
+    <RestaurantList />
+    <RestaurantList />
+    <RestaurantList />
+      
+    </div>
 );
 
 const Footer=() =>(

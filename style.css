@@ -21,7 +21,14 @@ display: flex;
     width:200px ;
     border: 1px solid  #d9d9e4;
     padding: 7px;
+    margin: 7px;
 }
 .card>img{
     width: 100%;
+}
+
+.restaurantList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
