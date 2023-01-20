@@ -897,7 +897,7 @@ const RestaurantList=({name,cloudinaryImageId,cuisines,avgRating})=>{
 const Body=() =>(
     <div className="restaurantList">
     {restaurants.map((restaurant)=>{
-return<RestaurantList {...restaurant.data} />
+return<RestaurantList {...restaurant.data}  key={restaurant.data.id} />
     })}
     </div>
 

@@ -213,6 +213,18 @@ inside jsx expressions { // single line } or {/***/} multiline , because jsx exp
  React.Fragment is a component exported by React library ,Any piece of jsx component we write can have one one parent , and we dont want that parent to be visible on Dom we awrap the jsx element with <React.Fragment></React.Fragment> component or <></> empty tags.
 Both behaves the same . internally <></> represents React.Fragment only .
 31. What is virtual DOM?
-
+It is the representation of the actual DOM .
+32.what is Reconciliation in React ?
+Reconciliation is the process for rendering the trees , which internally runs the Diff Algorithm to findout the difference in the trees and determines which portion of the tree will re-render.
+33.What is React Fiber?
+React Fiber is the new Reconciliation Engine , introduced in react 16 to find the Diff .
+34.Why do we need keys in React?When do we need keys in react?
+If we have multiple childs of same tag in the same level , then React cant determine the difference between the trees and re-renders the whole tree on every change . To make them unique React asks to use key as the unique attribute for those trees having similar tags.
+35.Can  we use index as keys in React?
+Yes , but React recomends not to use index as key.
+36.What is props in React?ways to 
+props are the properties objects, which accepts the arguments/data passed from the functional component.
+37.What is Config Driven UI?
+While building a real world application we want our application to work for all (irrespective of their location or any kind of factor), So in that case we control frontend using a config ,The config is driven from backend and api.
 
 
