@@ -896,13 +896,11 @@ const RestaurantList=({name,cloudinaryImageId,cuisines,avgRating})=>{
 }
 const Body=() =>(
     <div className="restaurantList">
-    <RestaurantList {...restaurants[0].data} />
-    <RestaurantList {...restaurants[1].data} />
-    <RestaurantList {...restaurants[2].data} />
-    <RestaurantList {...restaurants[3].data} />
-    <RestaurantList {...restaurants[4].data} />
-    <RestaurantList {...restaurants[5].data} />
+    {restaurants.map((restaurant)=>{
+return<RestaurantList {...restaurant.data} />
+    })}
     </div>
+
 );
 
 const Footer=() =>(
