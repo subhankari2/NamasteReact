@@ -885,12 +885,13 @@ const restaurants=[
     },
 ];
 const RestaurantList=({restaurant})=>{
+    const {name,cloudinaryImageId,cuisines,avgRating}=restaurant.data;
    return(
         <div className="card">
-    <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+restaurant.data.cloudinaryImageId} alt="logo" />
-    <h1>{restaurant.data.name}</h1>
-    <h3>{restaurant.data.cuisines.join(",")}</h3>
-    <h3>{restaurant.data.avgRating} stars</h3>
+    <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+cloudinaryImageId} alt="logo" />
+    <h1>{name}</h1>
+    <h3>{cuisines.join(",")}</h3>
+    <h3>{avgRating} stars</h3>
     </div>
     );
 }
