@@ -884,21 +884,13 @@ const restaurants=[
       "subtype": "basic"
     },
 ];
-// const card={
-//     name:"Burger King",
-//     image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/pifmdkvrlddxq8bshjy6",
-//     rating:"4.2",
-//     cuisine:["American,Burgers"]
-// }
-const RestaurantList=(props)=>{
-    console.log(props)
-    
-    return(
+const RestaurantList=({restaurant})=>{
+   return(
         <div className="card">
-    <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+props.restaurant.data.cloudinaryImageId} alt="logo" />
-    <h1>{props.restaurant.data.name}</h1>
-    <h3>{props.restaurant.data.cuisines.join(",")}</h3>
-    <h3>{props.restaurant.data.avgRating} stars</h3>
+    <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+restaurant.data.cloudinaryImageId} alt="logo" />
+    <h1>{restaurant.data.name}</h1>
+    <h3>{restaurant.data.cuisines.join(",")}</h3>
+    <h3>{restaurant.data.avgRating} stars</h3>
     </div>
     );
 }
