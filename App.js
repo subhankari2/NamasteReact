@@ -890,31 +890,26 @@ const restaurants=[
 //     rating:"4.2",
 //     cuisine:["American,Burgers"]
 // }
-const RestaurantList=()=>{
+const RestaurantList=(props)=>{
+    console.log(props)
+    
     return(
         <div className="card">
-    <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+restaurants[0].data.cloudinaryImageId} alt="logo" />
-    <h1>{restaurants[0].data.name}</h1>
-    <h3>{restaurants[2].data.cuisines.join(",")}</h3>
-    <h3>{restaurants[0].data.avgRating} stars</h3>
+    <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+props.restaurant.data.cloudinaryImageId} alt="logo" />
+    <h1>{props.restaurant.data.name}</h1>
+    <h3>{props.restaurant.data.cuisines.join(",")}</h3>
+    <h3>{props.restaurant.data.avgRating} stars</h3>
     </div>
     );
 }
 const Body=() =>(
     <div className="restaurantList">
-    <RestaurantList />
-    <RestaurantList />
-    <RestaurantList />
-    <RestaurantList />
-    <RestaurantList />
-    <RestaurantList />
-    <RestaurantList />
-    <RestaurantList />   
-    <RestaurantList />
-    <RestaurantList />
-    <RestaurantList />
-    <RestaurantList />
-      
+    <RestaurantList restaurant={restaurants[0]}/>
+    <RestaurantList restaurant={restaurants[1]}/>
+    <RestaurantList restaurant={restaurants[2]}/>
+    <RestaurantList restaurant={restaurants[3]}/>
+    <RestaurantList restaurant={restaurants[4]}/>
+    <RestaurantList restaurant={restaurants[5]}/>      
     </div>
 );
 
