@@ -201,5 +201,18 @@ Ref:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
 <TitleComponent></TitleComponent> <=> <TitleComponent /> these both are same
 
 
+Assignment4
+============
+27 . is jsx mandatory for React ?
+No 
+28 . is Es6 mandatory for React?
+No , React never forces to use it .
+29. How can i write comment in jsx?
+inside jsx expressions { // single line } or {/***/} multiline , because jsx expressions accepts javascript , and in js single line and multi-line cmnts are allowed.
+30.what is <React.Fragment></React.Fragment> and <></> ?
+ React.Fragment is a component exported by React library ,Any piece of jsx component we write can have one one parent , and we dont want that parent to be visible on Dom we awrap the jsx element with <React.Fragment></React.Fragment> component or <></> empty tags.
+Both behaves the same . internally <></> represents React.Fragment only .
+31. What is virtual DOM?
+
 
 
