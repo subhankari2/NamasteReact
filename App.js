@@ -884,8 +884,7 @@ const restaurants=[
       "subtype": "basic"
     },
 ];
-const RestaurantList=({restaurant})=>{
-    const {name,cloudinaryImageId,cuisines,avgRating}=restaurant.data;
+const RestaurantList=({name,cloudinaryImageId,cuisines,avgRating})=>{
    return(
         <div className="card">
     <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+cloudinaryImageId} alt="logo" />
@@ -897,12 +896,12 @@ const RestaurantList=({restaurant})=>{
 }
 const Body=() =>(
     <div className="restaurantList">
-    <RestaurantList restaurant={restaurants[0]}/>
-    <RestaurantList restaurant={restaurants[1]}/>
-    <RestaurantList restaurant={restaurants[2]}/>
-    <RestaurantList restaurant={restaurants[3]}/>
-    <RestaurantList restaurant={restaurants[4]}/>
-    <RestaurantList restaurant={restaurants[5]}/>      
+    <RestaurantList name={restaurants[0].data.name} cloudinaryImageId={restaurants[0].data.cloudinaryImageId} cuisines={restaurants[0].data.cuisines} avgRating={restaurants[0].data.avgRating} />
+    <RestaurantList name={restaurants[1].data.name}   cloudinaryImageId={restaurants[1].data.cloudinaryImageId} cuisines={restaurants[1].data.cuisines} avgRating={restaurants[1].data.avgRating}  />
+    <RestaurantList name={restaurants[2].data.name} cloudinaryImageId={restaurants[2].data.cloudinaryImageId} cuisines={restaurants[2].data.cuisines} avgRating={restaurants[2].data.avgRating} />
+    <RestaurantList name={restaurants[3].data.name} cloudinaryImageId={restaurants[3].data.cloudinaryImageId} cuisines={restaurants[3].data.cuisines} avgRating={restaurants[3].data.avgRating} />
+    <RestaurantList name={restaurants[4].data.name} cloudinaryImageId={restaurants[4].data.cloudinaryImageId} cuisines={restaurants[4].data.cuisines} avgRating={restaurants[4].data.avgRating}/>
+    <RestaurantList name={restaurants[5].data.name} cloudinaryImageId={restaurants[5].data.cloudinaryImageId} cuisines={restaurants[5].data.cuisines} avgRating={restaurants[5].data.avgRating}/>      
     </div>
 );
 
