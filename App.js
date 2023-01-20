@@ -896,12 +896,12 @@ const RestaurantList=({name,cloudinaryImageId,cuisines,avgRating})=>{
 }
 const Body=() =>(
     <div className="restaurantList">
-    <RestaurantList name={restaurants[0].data.name} cloudinaryImageId={restaurants[0].data.cloudinaryImageId} cuisines={restaurants[0].data.cuisines} avgRating={restaurants[0].data.avgRating} />
-    <RestaurantList name={restaurants[1].data.name}   cloudinaryImageId={restaurants[1].data.cloudinaryImageId} cuisines={restaurants[1].data.cuisines} avgRating={restaurants[1].data.avgRating}  />
-    <RestaurantList name={restaurants[2].data.name} cloudinaryImageId={restaurants[2].data.cloudinaryImageId} cuisines={restaurants[2].data.cuisines} avgRating={restaurants[2].data.avgRating} />
-    <RestaurantList name={restaurants[3].data.name} cloudinaryImageId={restaurants[3].data.cloudinaryImageId} cuisines={restaurants[3].data.cuisines} avgRating={restaurants[3].data.avgRating} />
-    <RestaurantList name={restaurants[4].data.name} cloudinaryImageId={restaurants[4].data.cloudinaryImageId} cuisines={restaurants[4].data.cuisines} avgRating={restaurants[4].data.avgRating}/>
-    <RestaurantList name={restaurants[5].data.name} cloudinaryImageId={restaurants[5].data.cloudinaryImageId} cuisines={restaurants[5].data.cuisines} avgRating={restaurants[5].data.avgRating}/>      
+    <RestaurantList {...restaurants[0].data} />
+    <RestaurantList {...restaurants[1].data} />
+    <RestaurantList {...restaurants[2].data} />
+    <RestaurantList {...restaurants[3].data} />
+    <RestaurantList {...restaurants[4].data} />
+    <RestaurantList {...restaurants[5].data} />
     </div>
 );
 
