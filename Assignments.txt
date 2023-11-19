@@ -42,6 +42,7 @@ Ref:https://www.quora.com/Why-is-React-called-React
 If we want React to be Served as a cdn link then crossorigin is recomended to be used .
 The crossorigin attribute, valid on the <audio>, <img>, <link>, <script>, and <video> elements, provides support for CORS, defining how the element handles cross-origin requests, thereby enabling the configuration of the CORS requests for the element's fetched data. Depending on the element, the attribute can be a CORS settings attribute.
 
+ref: https://www.w3schools.com/Tags/att_script_crossorigin.asp
 Ref:https://reactjs.org/docs/cdn-links.html#why-the-crossorigin-attribute
 Ref:https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin
 Ref:https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
